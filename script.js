@@ -1,7 +1,7 @@
 const cart = document.querySelector(".bag-c");
 const cartSide = document.querySelector(".cart-side");
 
-fetch("/data.json")
+fetch("./data.json")
     .then((res) => res.json())
     .then((products) => {
         let poster = document.querySelector(".container");
