@@ -1,0 +1,49 @@
+html {
+    font-size: 10px;
+}
+body {
+    font-family: sans-serif;
+}
+.form-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+    height: 70rem;
+}
+.some-info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 38%;
+    gap: 2.5rem;
+}
+.d-us-l {
+    font-size: 2rem;
+}
+.happy-lines {
+    font-size: 1.3rem;
+    color: grey;
+}
+.form-for-reply {
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    gap: 2rem;
+}
+.fl-li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#name,
+#email,
+#mobile-no {
+    height: 3rem;
+}
+
+.lbl-txt {
+    font-size: 1.2rem;
+}
