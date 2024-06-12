@@ -45,7 +45,7 @@ lrg.textContent = "L";
 details.appendChild(naam);
 details.appendChild(parts);
 
-fetch("./data.json")
+fetch("../data.json")
     .then((res) => res.json())
     .then((products) => {
         const param = new URLSearchParams(window.location.search);
