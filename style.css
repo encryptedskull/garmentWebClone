@@ -117,13 +117,12 @@ a {
     justify-content: space-evenly;
 }
 .card {
-    height: 38rem;
+    height: 46rem;
     width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
-    /* border: 1px solid black; */
+    /* border: 1px solid; */
 }
 .hessa {
     display: flex;
@@ -140,6 +139,15 @@ a {
 
 .info {
     font-size: 1.4rem;
+}
+.drop-down {
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
 }
 .price {
     font-size: medium;
@@ -158,10 +166,11 @@ a {
     font-size: 17px;
     border: 1px solid transparent;
 }
+
 .size:hover .small {
     border-color: transparent;
 }
-.small {
+.barder {
     border-color: black;
 }
 .size .large:hover,
@@ -301,6 +310,9 @@ a {
     outline: none;
     border: 1px solid grey;
 }
+.blur {
+    filter: blur(5px);
+}
 
 .cart-side {
     position: absolute;
@@ -324,6 +336,9 @@ a {
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
+    position: sticky;
+    top: 0;
+    background: #fff;
 }
 .my-bgc {
     font-size: 17px;
@@ -340,12 +355,11 @@ a {
 }
 
 .block-con {
-    height: 400px;
+    height: 440px;
     width: 250px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* border: 1px solid; */
 }
 .p-foto {
     height: 200px;
@@ -356,7 +370,7 @@ a {
     font-weight: bold;
 }
 .check-btn {
-    width: 13rem;
+    width: 15rem;
     height: 3.5rem;
     color: #fff;
     background: rgb(2, 2, 104);
@@ -370,11 +384,49 @@ a {
     color: rgb(2, 2, 104);
     border: 1px solid rgb(2, 2, 104);
 }
-
+.cart-onward {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#check-button {
+    width: 300px;
+    height: 50px;
+}
 .price-n-btn {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+}
+.quantity-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15rem;
+    height: 4rem;
+}
+.decrement-div,
+.increment-div {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    background: #fff;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px gray;
+}
+.result-div {
+    height: 30px;
+    width: 60px;
+    box-shadow: 0px 0px 2px gray;
+    font-size: 13px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 

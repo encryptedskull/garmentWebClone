@@ -142,5 +142,11 @@
         "name": "Shoes in all varities",
         "price": "3000",
         "discription": "Mens Shoes Collections"
+    },
+    {
+        "iaddress": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmltg3EudPWznp_eOwb_1D36R2Iue5Calv9w&s",
+        "name": "Slippers in all varities",
+        "price": "1500",
+        "discription": "Mens Shoes Collections"
     }
 ]
