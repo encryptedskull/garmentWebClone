@@ -3,7 +3,7 @@ const contactDiv = document.createElement("div");
 contactDiv.setAttribute("class", "contact-div");
 const back = document.querySelector(".back");
 back.addEventListener("click", function () {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 });
 
 const h1tag = document.createElement("h1");
