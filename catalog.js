@@ -210,7 +210,6 @@ fetch("./data.json")
                 disBlock(cartSide);
                 head.classList.add("blur");
                 maain.classList.add("blur");
-                mImg.classList.add("blur");
                 phooter.classList.add("blur");
 
                 updateCartDisplay();
@@ -322,17 +321,17 @@ fetch("./data.json")
             any.style.border = "0px solid transparent";
         };
 
-        ctlg.addEventListener("mouseover", function () {
-            disBlock(hovr);
-        });
-        hovr.addEventListener("mouseover", function () {
-            disBlock(men_hvr);
-        });
+        // ctlg.addEventListener("mouseover", function () {
+        //     disBlock(hovr);
+        // });
+        // hovr.addEventListener("mouseover", function () {
+        //     disBlock(men_hvr);
+        // });
 
-        c_img.addEventListener("mouseover", function () {
-            disNone(hovr);
-            disNone(men_hvr);
-        });
+        // c_img.addEventListener("mouseover", function () {
+        //     disNone(hovr);
+        //     disNone(men_hvr);
+        // });
 
         // let starts = localStorage.getItem("cartItem") ?? 0;
         // counter.textContent = starts;

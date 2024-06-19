@@ -154,72 +154,54 @@ let delprice = 200;
 const priceHolder = document.querySelector(".ttl-price");
 const deliveryCharges = document.querySelector(".del-price");
 const GrandCharges = document.querySelector(".overall-price");
-cartData.forEach((element) => {
-    const containerDiv = document.createElement("div");
-    containerDiv.setAttribute("class", "container-div");
 
-    const itemImg = document.createElement("img");
-    itemImg.setAttribute("class", "item-image");
-    containerDiv.appendChild(itemImg);
+const containerDiv = document.createElement("div");
+containerDiv.setAttribute("class", "container-div");
 
-    const npscqDiv = document.createElement("div");
-    npscqDiv.setAttribute("class", "information-div");
+const itemImg = document.createElement("img");
+itemImg.setAttribute("class", "item-image");
+containerDiv.appendChild(itemImg);
 
-    const namePara = document.createElement("p");
-    const sizePara = document.createElement("p");
-    const colorPara = document.createElement("p");
-    const ratePara = document.createElement("p");
-    const quantityPara = document.createElement("p");
+const npscqDiv = document.createElement("div");
+npscqDiv.setAttribute("class", "information-div");
 
-    namePara.setAttribute("class", "info-para");
-    sizePara.setAttribute("class", "info-para");
-    colorPara.setAttribute("class", "info-para");
-    quantityPara.setAttribute("class", "info-para");
-    ratePara.setAttribute("class", "info-para");
+const namePara = document.createElement("p");
+const sizePara = document.createElement("p");
+const colorPara = document.createElement("p");
+const ratePara = document.createElement("p");
+const quantityPara = document.createElement("p");
 
-    npscqDiv.appendChild(namePara);
-    npscqDiv.appendChild(sizePara);
-    npscqDiv.appendChild(colorPara);
-    npscqDiv.appendChild(quantityPara);
-    npscqDiv.appendChild(ratePara);
+namePara.setAttribute("class", "info-para");
+sizePara.setAttribute("class", "info-para");
+colorPara.setAttribute("class", "info-para");
+quantityPara.setAttribute("class", "info-para");
+ratePara.setAttribute("class", "info-para");
 
-    containerDiv.appendChild(npscqDiv);
+npscqDiv.appendChild(namePara);
+npscqDiv.appendChild(sizePara);
+npscqDiv.appendChild(colorPara);
+npscqDiv.appendChild(quantityPara);
+npscqDiv.appendChild(ratePara);
 
-    const clickedButton = localStorage.getItem("clickedButton");
+containerDiv.appendChild(npscqDiv);
 
-    // const iamgeAddress = JSON.parse(localStorage.getItem("bin-image"));
-    // itemImg.src = iamgeAddress;
-    // const nameItem = JSON.parse(localStorage.getItem("bin-name"));
-    // namePara.textContent = nameItem;
-    // const itemSize = JSON.parse(localStorage.getItem("bin-size"));
-    // sizePara.textContent = `Size: ${itemSize}`;
-    // const quantityOrdered = JSON.parse(
-    //     localStorage.getItem("bin-quantity")
-    // );
-    // quantityPara.textContent = `Quantity: ${quantityOrdered}`;
-    // const itemPrice = JSON.parse(localStorage.getItem("bin-price"));
-    // let rate = parseFloat(itemPrice) * parseFloat(quantityOrdered);
-    // ratePara.textContent = `Rs ${rate}.00`;
-    // totalPrice += parseFloat(rate);
-    // cartInfo.appendChild(containerDiv);
-    // priceHolder.textContent = `Rs ${totalPrice}.00`;
-    // deliveryCharges.textContent = `Rs ${delprice}.00`;
-    // GrandCharges.textContent = `Rs ${totalPrice + delprice}.00`;
+const iamgeAddress = JSON.parse(localStorage.getItem("bin-image"));
+itemImg.src = iamgeAddress;
+const nameItem = JSON.parse(localStorage.getItem("bin-name"));
+namePara.textContent = nameItem;
+const itemSize = JSON.parse(localStorage.getItem("bin-size"));
+sizePara.textContent = `Size: ${itemSize}`;
+const quantityOrdered = JSON.parse(localStorage.getItem("bin-quantity"));
+quantityPara.textContent = `Quantity: ${quantityOrdered}`;
+const itemPrice = JSON.parse(localStorage.getItem("bin-price"));
+let rate = parseFloat(itemPrice) * parseFloat(quantityOrdered);
 
-    itemImg.src = element.iaddress;
-    namePara.textContent = element.name;
-    sizePara.textContent = `Size: ${element.size}`;
-    quantityPara.textContent = `Quantity: ${element.quantity} `;
-    let nirh = parseFloat(element.price) * parseFloat(element.quantity);
-
-    ratePara.textContent = `Rs ${nirh}.00`;
-    totalPrice += parseFloat(nirh);
-    cartInfo.appendChild(containerDiv);
-
-    priceHolder.textContent = `Rs ${totalPrice}.00`;
-    deliveryCharges.textContent = `Rs ${delprice}.00`;
-    GrandCharges.textContent = `Rs ${totalPrice + delprice}.00`;
-});
+ratePara.textContent = `Rs ${rate}.00`;
+totalPrice += parseFloat(rate);
+cartInfo.appendChild(containerDiv);
+priceHolder.textContent = `Rs ${totalPrice}.00`;
+deliveryCharges.textContent = `Rs ${delprice}.00`;
+GrandCharges.textContent = `Rs ${totalPrice + delprice}.00`;
 
 orderBtn.addEventListener("click", function () {
     /* city.value,phoneInput.value,address.value,fName and lName.value */

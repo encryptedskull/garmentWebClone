@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background: #fff;
+}
+html {
+    font: 10px;
+}
+.main {
+    width: 100%;
+    height: 1100px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-data {
+    width: 45%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 12px;
+    border: 1px solid;
+}
+
+.contact-div {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-inline: 20px;
+}
+.contact-input {
+    height: 40px;
+    width: 600px;
+    padding-left: 10px;
+    outline: none;
+}
+.delivery-div {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-inline: 20px;
+    gap: 12px;
+}
+.city-div {
+    width: 610px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.city-name {
+    width: 260px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.rates {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-inline: 20px;
+}
+.std-r-div {
+    border: 1px solid;
+    display: flex;
+    height: 40px;
+    width: 590px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.pay-div {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-inline: 20px;
+}
+.pay-para {
+    border: 1px solid;
+    display: flex;
+    height: 40px;
+    width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.btn-div {
+    display: flex;
+    align-items: center;
+    margin-inline: 20px;
+}
+.order-btn {
+    width: 610px;
+    height: 40px;
+    color: #fff;
+    background: rgb(2, 2, 104);
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+}
+.order-btn:hover {
+    background: #fff;
+    color: rgb(2, 2, 104);
+    border: 1px solid rgb(2, 2, 104);
+}
+
+.cart-data {
+    width: 45%;
+    height: 1000px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cart-info {
+    width: 100%;
+    height: 700px;
+    overflow-y: auto;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+.info-para {
+    font-weight: bold;
+}
+
+.container-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+}
+
+.information-div {
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+}
+.item-image {
+    /* border: 1px solid; */
+    height: 150px;
+    width: 150px;
+}
+.payments-div {
+    /* border: 1px solid; */
+    height: 280px;
+    width: 850px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.total-i-price {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-bar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-div {
+    display: flex;
+    width: 1690px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+.back {
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+    cursor: pointer;
+}

@@ -196,3 +196,41 @@ li {
     /* font-size: 1.2rem; */
     color: grey;
 }
+.drop-down {
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+}
+.quantity-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15rem;
+    height: 4rem;
+}
+
+.decrement-div,
+.increment-div {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    background: #fff;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px gray;
+}
+.result-div {
+    height: 30px;
+    width: 60px;
+    box-shadow: 0px 0px 2px gray;
+    font-size: 13px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

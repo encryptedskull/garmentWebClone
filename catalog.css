@@ -10,6 +10,9 @@ html {
 }
 body {
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 a {
     color: grey;
@@ -77,6 +80,82 @@ a {
     left: 50%;
     top: 10%;
 }
+.side-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.available-sizes {
+    text-align: center;
+    height: 60px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 50px;
+}
+
+.thd {
+    background-color: #4caf50;
+    color: white;
+}
+
+.headers-row th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.body-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.body-row:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.body-row td {
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+.img-div {
+    width: 80%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.size-img {
+    height: 300px;
+    width: 360px;
+}
+.sizes-para {
+    height: 40px;
+    width: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .men-collection {
     height: 12rem;
     width: 15rem;
@@ -107,14 +186,19 @@ a {
 }
 .main {
     display: flex;
+    gap: 10px;
     justify-content: center;
 }
+
 .container {
-    width: 80%;
+    width: 60%;
+    height: 950px;
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
     justify-content: space-evenly;
+    box-shadow: 0px 0px 2px gray;
 }
 .card {
     height: 46rem;
@@ -462,7 +546,7 @@ a {
     }
     .card {
         width: 15rem;
-        height: 46rem;
+        height: 30rem;
     }
     .sample {
         height: 15rem;
@@ -476,7 +560,7 @@ a {
         gap: 1rem;
     }
     .about-us {
-        width: 30rem;
+        width: 35rem;
     }
     .subscribe {
         display: flex;
@@ -484,7 +568,7 @@ a {
     }
     .opinion,
     .subs {
-        width: 30rem;
+        width: 35rem;
     }
     .c-foot {
         height: 8rem;
